@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Fragment>
       <footer className={classes.footer}>
-        <p>© 2023 Random Restaurant Finder. All rights reserved.</p>
+        <p> © Not at all protected by copyright. No rights reserved.</p>
         <div className={classes.socialMedia}>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />
