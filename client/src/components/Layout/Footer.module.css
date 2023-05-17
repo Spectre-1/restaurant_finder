@@ -1,0 +1,25 @@
+.footer {
+    background-color: #71797E;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .socialMedia {
+    margin-top: 5px;
+  }
+  
+  .socialMedia a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 3px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .socialMedia a:hover {
+    color: #007bff;
+  }
+  
