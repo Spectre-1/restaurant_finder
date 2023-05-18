@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -8,6 +9,10 @@ app.listen(port, () => console.log(`App listening at http://localhost:${port}`))
 
 const axios = require('axios');
 
+const yelpApiKey = process.env.YELP_API_KEY;
+// Access the Yelp API key from the environment variable
+// Refer to info.env file for key
+
 axios.get('https://api.yelp.com/v3/businesses/search', {
   params: {
     location: 'San Francisco',
@@ -15,7 +20,7 @@ axios.get('https://api.yelp.com/v3/businesses/search', {
     limit: 10
   },
   headers: {
-    Authorization: `Bearer ${YOUR_YELP_API_KEY}`
+    Authorization: `Bearer ${yelpApiKey}` // Use the yelpApiKey variable
   }
 })
 .then(response => {
